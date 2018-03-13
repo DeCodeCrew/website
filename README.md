@@ -1,4 +1,4 @@
-# website: [https://decodecrew.github.io/website/](https://decodecrew.github.io/website/)
+# website
 This is a placeholder for the decodecrew.com website
 
 ### The idea
