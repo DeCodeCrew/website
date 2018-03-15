@@ -7,6 +7,20 @@ html, button, input, select, textarea,.pure-g [class *= "pure-u"] {
     font-family: Georgia, Times, "Times New Roman", serif;
 }
 
+a{
+	font-size:16px;
+	color:#FFF;
+    transition: all 0.3s ease-in;
+    text-decoration:none;
+}
+
+a:hover{
+	-webkit-stroke-width: 5.3px;
+    -webkit-stroke-color: #FFFFFF;
+    -webkit-fill-color: #FFFFFF;
+    text-shadow: 1px 0px 20px orange;
+}
+
 header {
 }
 
@@ -17,7 +31,7 @@ header {
     width:100%;
 }
 
-.pure-g > div {
+.pure-g > div { 
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -45,8 +59,13 @@ img {
     height: 250px;
 }
 
+img:hover {
+    box-shadow: 10px 10px 5px grey;
+}
+
 .pure-button {
     background-color: white;
     padding: 2px;
     border-radius: 5px;
+    
 }
