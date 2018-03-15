@@ -1,0 +1,52 @@
+body {
+    background-color: aliceblue;   
+}
+
+html, button, input, select, textarea,.pure-g [class *= "pure-u"] {
+    /* Set your content font stack here: */
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+header {
+}
+
+#splashscreen {
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+}
+
+.pure-g > div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.l-box {
+    padding: 25px 0px 25px 0px;
+    text-align: center;
+}
+
+#mainBackground {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+#top_menu {
+    background-color: #cce7ff;
+    margin-bottom: 25px;
+}
+
+img {
+    border-radius: 5px;
+    width: 250px;
+    height: 250px;
+}
+
+.pure-button {
+    background-color: white;
+    padding: 2px;
+    border-radius: 5px;
+}

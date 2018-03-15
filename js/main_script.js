@@ -1,3 +1,5 @@
-$('.enter_link').click(function () {
-    $(this).parent('#splashscreen').fadeOut(500);
+var boxopen = document.getElementById ('boxopen');
+boxopen.addEventListener("click", function() {
+  boxopen.style.animation = "rotate 2s";
+  boxopen.style.webkitAnimation = "rotate 2s";
 });
