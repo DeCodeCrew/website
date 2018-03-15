@@ -55,12 +55,14 @@ header {
 
 img {
     border-radius: 5px;
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
+    margin: 100px;
 }
 
 img:hover {
-    box-shadow: 10px 10px 5px grey;
+/*    box-shadow: 10px 10px 5px grey;*/
+    transform:translate(+25%, +25%) scale(1);
 }
 
 .pure-button {
@@ -68,4 +70,53 @@ img:hover {
     padding: 2px;
     border-radius: 5px;
     
+}
+
+li {
+  position: relative;
+  display: inline-block;
+}
+
+li:after {
+  content: "";
+  position: absolute;
+  left:0;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width .3s ease-in-out;
+}
+
+li:hover:after {
+  width: 100%;
+}
+
+.rotate {
+	-webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+     
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+     
+    overflow: hidden;
+}
+
+.rotate:hover {
+	-webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+}
+
+.zoom {
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
