@@ -38,7 +38,7 @@ header {
 }
 
 .l-box {
-    padding: 25px 0px 25px 0px;
+    padding: 45px 0px 45px 0px;
     text-align: center;
 }
 
@@ -58,11 +58,6 @@ img {
     width: 150px;
     height: 150px;
     margin: 100px;
-}
-
-img:hover {
-/*    box-shadow: 10px 10px 5px grey;*/
-    transform:translate(+25%, +25%) scale(1);
 }
 
 .pure-button {
@@ -92,6 +87,7 @@ li:hover:after {
   width: 100%;
 }
 
+/*
 .rotate {
 	-webkit-transition-duration: 0.8s;
     -moz-transition-duration: 0.8s;
@@ -101,7 +97,7 @@ li:hover:after {
     -webkit-transition-property: -webkit-transform;
     -moz-transition-property: -moz-transform;
     -o-transition-property: -o-transform;
-    transition-property: transform;
+    transition-property: transform;     
      
     overflow: hidden;
 }
@@ -111,6 +107,7 @@ li:hover:after {
     -moz-transform:rotate(360deg);
     -o-transform:rotate(360deg);
 }
+*/
 
 .zoom {
     transition: transform .2s; /* Animation */
@@ -119,4 +116,48 @@ li:hover:after {
 
 .zoom:hover {
     transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.animated { 
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+}
+
+@-webkit-keyframes bounce { 
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+    40% {-webkit-transform: translateY(-30px);} 
+    60% {-webkit-transform: translateY(-15px);} 
+} 
+
+@keyframes bounce { 
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-30px);} 
+    60% {transform: translateY(-15px);} 
+}
+
+.bounce { 
+    -webkit-animation-name: bounce; 
+    animation-name: bounce; 
+}
+
+/* Luffy stripe */
+
+#luffy_stripe {
+    width: 35%;
+    height: 200px;
+    border-radius: 0px;
+    margin: 0px;
+    text-align: center;    
+}
+
+#luffy_div {
+    text-align: center;
+    background-color: #ffcb03;
+}
+
+/* End of Luffy stripe */
+.group_name {
+    font-weight: bold;
 }
